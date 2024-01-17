@@ -10,7 +10,7 @@ void pall(stack_t **stack, int line_num)
 {
 	stack_t *tmp = (*stack)->next;
 	(void)line_num;
-	
+
 	while (tmp)
 	{
 		printf("%d\n", tmp->n);
@@ -23,7 +23,7 @@ void pall(stack_t **stack, int line_num)
  * @stack: A pointer to the top node of a stack_t linked list.
  * @line_num: The current working line number of a Monty bytecodes file.
  */
- 
+
 void pint(stack_t **stack, int line_num)
 {
 	if (!(*stack)->next)
@@ -39,7 +39,7 @@ void pint(stack_t **stack, int line_num)
  * @stack: A pointer to the top node of a stack_t linked list.
  * @line_num: The current working line number of a Monty bytecodes file.
  */
- 
+
 void pop(stack_t **stack, int line_num)
 {
 	stack_t *tmp = NULL;
@@ -62,7 +62,7 @@ void pop(stack_t **stack, int line_num)
  * @stack: A pointer to the top node of a stack_t linked list.
  * @line_num: The current working line number of a Monty bytecodes file.
  */
- 
+
 void swap(stack_t **stack, int line_num)
 {
 	stack_t *tmp;
