@@ -38,11 +38,11 @@ void pstr(stack_t **stack, __attribute__((unused))unsigned int line_num)
 	tmp_node = *stack;
 	while (tmp_node != NULL)
 	{
-		variable = tmp_node->n;
+	variable = tmp_node->n;
 	if (variable <= 0 || variable > 127)
 		break;
-		printf("%c", variable);
-		tmp_node = tmp_node->next;
+	printf("%c", variable);
+	tmp_node = tmp_node->next;
 	}
 	printf("\n");
 }

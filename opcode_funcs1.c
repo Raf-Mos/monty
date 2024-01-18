@@ -35,8 +35,8 @@ void pall(stack_t **stack, unsigned int line_num)
 	(void) line_num;
 
 	if (stack == NULL)
-		exit(EXIT_FAILURE);
-		tmp_node = *stack;
+	exit(EXIT_FAILURE);
+	tmp_node = *stack;
 	while (tmp_node != NULL)
 	{
 		printf("%d\n", tmp_node->n);
